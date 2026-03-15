@@ -1,0 +1,52 @@
+.headerParentContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	padding: 0px 24px;
+	border-bottom: 1px solid #f2eff3;
+
+	.rightHeaderContainer {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+
+		.fireContainer {
+			width: 66px;
+			height: 32px;
+			border-radius: 9998px;
+			background-color: #f2eff3;
+			height: 32px;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			padding: 4px 8px 4px 8px;
+			justify-content: center;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 500;
+			font-family: "Be Vietnam Pro", sans-serif;
+		}
+
+		.bellContainer {
+			width: 32px;
+			height: 32px;
+			border-radius: 100%;
+			border: 2px solid #bcbac7;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.profileContainer {
+			width: 32px;
+			height: 32px;
+			border-radius: 100%;
+			.profileImage {
+				width: 100%;
+				height: 100%;
+				border-radius: 100%;
+			}
+		}
+	}
+}
