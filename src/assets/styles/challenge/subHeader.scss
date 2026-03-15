@@ -1,0 +1,38 @@
+.subHeaderParentContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 56px;
+	border-bottom: 1px solid #f2eff3;
+	padding: 0px 24px 0px 18px;
+	box-sizing: border-box;
+
+	.leftContainer {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+
+		.seperator {
+			width: 1px;
+			height: 24px;
+			background-color: #d9d6df;
+		}
+
+		.dayText {
+			font-size: 18x;
+			line-height: 26px;
+			font-weight: 600;
+			font-family: "Be Vietnam Pro", sans-serif;
+		}
+	}
+	.rightContainer {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 600;
+		font-family: "Be Vietnam Pro", sans-serif;
+	}
+}
