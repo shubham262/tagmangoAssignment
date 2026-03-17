@@ -1,0 +1,44 @@
+.subMissionPostCardContainer {
+	width: 100%;
+	height: auto;
+	border-radius: 24px;
+	display: flex;
+	flex-direction: column;
+	background-color: #e6f6eb;
+	padding-top: 12px;
+	gap: 12px;
+	.submissionText {
+		text-align: center;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+		font-family: "Be Vietnam Pro", sans-serif;
+		color: #218358;
+	}
+
+	.submissionCardContainer {
+		width: 100%;
+		background-color: #fff;
+		border-radius: 24px;
+		border: 1px solid #eae7ec;
+		display: flex;
+		flex-direction: column;
+		.submissionCardFooter {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 12px 16px;
+			.submissionCardFooterLeftContainer {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+			}
+			.submissionCardFooterRightContainer {
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 400;
+				font-family: "Be Vietnam Pro", sans-serif;
+			}
+		}
+	}
+}
