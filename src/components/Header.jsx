@@ -5,7 +5,7 @@ import logo from "../assets/images/logo.png";
 import darkLogo from "../assets/images/darkLogo.png";
 import Bell from "../assets/svg/challenge/bell.svg?react";
 import Fire from "../assets/svg/challenge/fire.svg?react";
-import { useTheme } from "../theme/ThemeContext";
+import { useTheme } from "../context/ThemeContext";
 
 const Header = () => {
 	const { theme, toggleTheme } = useTheme();

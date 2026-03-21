@@ -5,7 +5,7 @@ import Smile from "../assets/svg/challenge/smiley.svg?react";
 import DarkSmile from "../assets/svg/challenge/darkSmiley.svg?react";
 import profile from "../assets/images/profile.png";
 import workout from "../assets/images/workout.png";
-import { useTheme } from "../theme/ThemeContext";
+import { useTheme } from "../context/ThemeContext";
 import ConfettiPiece, { CONFETTI_PIECES } from "./Confetti";
 
 const SubmissionPostCard = () => {

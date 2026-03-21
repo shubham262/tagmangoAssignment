@@ -7,7 +7,7 @@ import firstImage from "../assets/images/1.png";
 import secondImage from "../assets/images/2.png";
 import thirdImage from "../assets/images/3.png";
 import Pin from "../assets/svg/challenge/pin.svg?react";
-import { useTheme } from "../theme/ThemeContext";
+import { useTheme } from "../context/ThemeContext";
 import DarkSmile from "../assets/svg/challenge/darkSmiley.svg?react";
 const FeedCard = ({ showPinned = false }) => {
 	const { theme } = useTheme();
