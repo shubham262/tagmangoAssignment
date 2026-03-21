@@ -4,11 +4,10 @@
 	justify-content: space-between;
 	width: 100%;
 	height: 56px;
-	border-bottom: 1px solid #f2eff3;
+	border-bottom: 1px solid var(--subHeader-border);
 	padding: 0px 24px 0px 18px;
 	box-sizing: border-box;
-	background-color: #fff;
-
+	background-color: var(--subHeader-bgColor);
 	.leftContainer {
 		display: flex;
 		align-items: center;
@@ -18,6 +17,7 @@
 			width: 1px;
 			height: 24px;
 			background-color: #d9d6df;
+			color: var(--seperator-color);
 		}
 
 		.dayText {
@@ -25,6 +25,7 @@
 			line-height: 26px;
 			font-weight: 600;
 			font-family: "Be Vietnam Pro", sans-serif;
+			color: var(--fire-text-color);
 		}
 	}
 	.rightContainer {
@@ -35,6 +36,10 @@
 		line-height: 24px;
 		font-weight: 600;
 		font-family: "Be Vietnam Pro", sans-serif;
+		color: var(--fire-text-color);
+		svg path {
+			fill: var(--info-svg-color);
+		}
 	}
 }
 @media (max-width: 799px) {
