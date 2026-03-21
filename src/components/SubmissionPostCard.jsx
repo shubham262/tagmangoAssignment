@@ -6,11 +6,20 @@ import DarkSmile from "../assets/svg/challenge/darkSmiley.svg?react";
 import profile from "../assets/images/profile.png";
 import workout from "../assets/images/workout.png";
 import { useTheme } from "../theme/ThemeContext";
+import ConfettiPiece, { CONFETTI_PIECES } from "./Confetti";
+
 const SubmissionPostCard = () => {
 	const { theme } = useTheme();
+
 	return (
 		<div className="subMissionPostCardContainer">
-			<span className="submissionText">Your Submission</span>
+			<div className="submissionHeaderWrapper">
+				{CONFETTI_PIECES.map((piece, i) => (
+					<ConfettiPiece key={i} {...piece} />
+				))}
+				<span className="submissionText">Your Submission</span>
+			</div>
+
 			<div className="submissionCardContainer">
 				<div className="submissionCardHeader">
 					<div className="profileImageContainer">
@@ -27,7 +36,7 @@ const SubmissionPostCard = () => {
 					</div>
 				</div>
 				<span className="submissionCardDescription">
-					Today's challenge workout completed - feeling stringer already
+					Today's challenge workout completed - feeling stronger already
 				</span>
 				<img src={workout} alt="workout" className="submissionCardImage" />
 				<div className="submissionCardFooter">
