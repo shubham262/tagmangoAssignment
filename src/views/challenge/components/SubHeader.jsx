@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../assets/styles/challenge/subHeader.scss";
-import Info from "../../../assets/svg/challenge/info.svg?react";
+import Info from "../../../assets/svg/challenge/Info.svg?react";
 import Back from "../../../assets/svg/challenge/back.svg?react";
 
 const SubHeader = () => {

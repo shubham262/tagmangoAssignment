@@ -5,7 +5,7 @@ import darkImage from "../../../assets/images/darkSideNew.png";
 import newImage from "../../../assets/images/new.png";
 import Tick from "../../../assets/svg/challenge/tick.svg?react";
 import Lock from "../../../assets/svg/challenge/lock.svg?react";
-import Info from "../../../assets/svg/challenge/info.svg?react";
+import Info from "../../../assets/svg/challenge/Info.svg?react";
 import Back from "../../../assets/svg/challenge/back.svg?react";
 import DarkLock from "../../../assets/svg/challenge/darkLock.svg?react";
 import { useTheme } from "../../../theme/ThemeContext";
