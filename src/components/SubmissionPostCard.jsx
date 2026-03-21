@@ -38,7 +38,13 @@ const SubmissionPostCard = () => {
 				<span className="submissionCardDescription">
 					Today's challenge workout completed - feeling stronger already
 				</span>
-				<img src={workout} alt="workout" className="submissionCardImage" />
+				<img
+					src={workout}
+					alt="workout"
+					className="submissionCardImage"
+					loading="lazy"
+					style={{ background: "#eee" }}
+				/>
 				<div className="submissionCardFooter">
 					<div className="submissionCardFooterLeftContainer">
 						<div className="groupedIconContainer">🙏 😍 18</div>
