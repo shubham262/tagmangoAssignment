@@ -5,10 +5,13 @@
 	flex-direction: column;
 	box-sizing: border-box;
 	overflow-x: hidden;
+	overflow-y: hidden;
 
 	.layoutContent {
 		flex: 1;
 		align-self: stretch;
 		display: flex;
+		min-height: 0;
+		overflow: hidden;
 	}
 }
