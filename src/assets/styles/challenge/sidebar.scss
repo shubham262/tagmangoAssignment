@@ -73,3 +73,73 @@
 		}
 	}
 }
+.mobileNavigationContainer {
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	background-color: #fff;
+
+	.mobileTopHeadingContainer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 8px;
+
+		.leftContainer {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			font-size: 18px;
+			line-height: 26px;
+			font-weight: 600;
+			font-family: "Be Vietnam Pro", sans-serif;
+			color: #211f26;
+		}
+
+		.iHolder {
+			width: 40px;
+			height: 40px;
+			border-radius: 100%;
+			background-color: #b8adae;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.mobileDaysContainer {
+		display: flex;
+		padding: 8px 12px;
+		padding-bottom: 0px;
+		gap: 8px;
+
+		.mobileDaysTab {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			width: 56px;
+			height: 68px;
+
+			align-items: center;
+			font-size: 12px;
+			line-height: 16px;
+			font-weight: 500;
+			font-family: "Be Vietnam Pro", sans-serif;
+			color: #211f26;
+
+			.activeDayText {
+				font-weight: 700;
+				font-size: 24px;
+				// line-height: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 799px) {
+	.sidebarContainer {
+		display: none;
+	}
+	.mobileNavigationContainer {
+		display: flex;
+	}
+}

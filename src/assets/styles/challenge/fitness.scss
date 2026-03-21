@@ -6,6 +6,7 @@
 	background-color: #f7f6fc;
 	min-height: 0;
 	overflow: hidden;
+	box-sizing: border-box;
 
 	.fitnessContentParentContainer {
 		display: flex;
@@ -30,6 +31,17 @@
 				display: flex;
 				flex-direction: column;
 				gap: 24px;
+			}
+		}
+	}
+}
+
+@media (max-width: 799px) {
+	.fitnessContainer {
+		.fitnessContentParentContainer {
+			flex-direction: column;
+			.contentContainer {
+				padding: 24px 8px;
 			}
 		}
 	}

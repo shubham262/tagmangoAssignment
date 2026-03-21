@@ -60,3 +60,9 @@
 		}
 	}
 }
+
+@media (max-width: 799px) {
+	.headerParentContainer {
+		display: none;
+	}
+}

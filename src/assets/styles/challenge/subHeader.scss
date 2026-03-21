@@ -37,3 +37,8 @@
 		font-family: "Be Vietnam Pro", sans-serif;
 	}
 }
+@media (max-width: 799px) {
+	.subHeaderParentContainer {
+		display: none;
+	}
+}
