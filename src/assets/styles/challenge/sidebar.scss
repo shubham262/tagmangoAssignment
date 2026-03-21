@@ -77,7 +77,9 @@
 	display: none;
 	flex-direction: column;
 	width: 100%;
-	background-color: #fff;
+	background-position: center;
+	box-sizing: border-box;
+	background-size: cover;
 
 	.mobileTopHeadingContainer {
 		display: flex;
@@ -118,19 +120,54 @@
 			gap: 8px;
 			width: 56px;
 			height: 68px;
-
+			flex-shrink: 0;
 			align-items: center;
 			font-size: 12px;
 			line-height: 16px;
 			font-weight: 500;
 			font-family: "Be Vietnam Pro", sans-serif;
 			color: #211f26;
+			padding-top: 8px;
+			cursor: pointer;
 
 			.activeDayText {
 				font-weight: 700;
 				font-size: 24px;
-				// line-height: 30px;
+				line-height: 30px;
 			}
+		}
+		.mobileDaysTab.firstMobileTab {
+			margin-left: 50%;
+		}
+		.mobileDaysTab.activeDay {
+			border-top-left-radius: 24px;
+			border-top-right-radius: 24px;
+			background-color: #f7f6fc;
+			position: relative;
+			z-index: 1;
+		}
+
+		.mobileDaysTab.activeDay::before {
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			left: -24px;
+			width: 24px;
+			height: 24px;
+			background: #f7f6fc;
+			mask: radial-gradient(circle 24px at 0 0, transparent 100%, #f7f6fc);
+		}
+
+		/* Bottom curve */
+		.mobileDaysTab.activeDay::after {
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			right: -24px;
+			width: 24px;
+			height: 24px;
+			background: #f7f6fc;
+			mask: radial-gradient(circle 24px at 100% 0, transparent 100%, #f7f6fc);
 		}
 	}
 }

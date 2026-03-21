@@ -1,6 +1,8 @@
 import React, { useCallback, useState } from "react";
 import "../../../assets/styles/challenge/sidebar.scss";
-import sidebarBackground from "../../../assets//images/sidebarbackGround.png";
+import sidebarBackground from "../../../assets/images/sidebarbackGround.png";
+
+import newImage from "../../../assets/images/new.png";
 import Tick from "../../../assets/svg/challenge/tick.svg?react";
 import Lock from "../../../assets/svg/challenge/lock.svg?react";
 import Info from "../../../assets/svg/challenge/info.svg?react";
@@ -40,7 +42,10 @@ const Sidebar = () => {
 					))}
 				</div>
 			</div>
-			<div className="mobileNavigationContainer">
+			<div
+				className="mobileNavigationContainer"
+				style={{ backgroundImage: `url(${newImage})` }}
+			>
 				<div className="mobileTopHeadingContainer">
 					<div className="leftContainer">
 						<Back />
@@ -56,7 +61,7 @@ const Sidebar = () => {
 							key={`days-mobile-${index + 1}`}
 							className={`mobileDaysTab ${
 								info?.activeDay === ele ? "activeDay" : ""
-							}`}
+							} ${index === 0 ? "firstMobileTab" : ""}`}
 							onClick={() => onDayClick(ele)}
 						>
 							{ele === info?.activeDay ? `Day` : `Day - ${ele}`}
