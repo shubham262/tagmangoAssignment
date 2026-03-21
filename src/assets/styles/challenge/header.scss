@@ -5,7 +5,7 @@
 	height: 60px;
 	padding: 0px 24px;
 	border-bottom: 1px solid #f2eff3;
-
+	background-color: var(--color-bg-primary);
 	.leftHeaderContainer {
 		height: 24px;
 		max-width: 201px;
@@ -25,7 +25,7 @@
 			width: 66px;
 			height: 32px;
 			border-radius: 9998px;
-			background-color: #f2eff3;
+			background-color: var(--fire-background);
 			display: flex;
 			align-items: center;
 			gap: 8px;
@@ -35,16 +35,20 @@
 			line-height: 24px;
 			font-weight: 500;
 			font-family: "Be Vietnam Pro", sans-serif;
+			color: var(--fire-text-color);
 		}
 
 		.bellContainer {
 			width: 32px;
 			height: 32px;
 			border-radius: 100%;
-			border: 2px solid #bcbac7;
+			border: 2px solid var(--bell-border);
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			svg path {
+				fill: var(--bell-color);
+			}
 		}
 
 		.profileContainer {

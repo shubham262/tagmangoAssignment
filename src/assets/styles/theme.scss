@@ -1,0 +1,18 @@
+// ── Light Theme (default) ──────────────────────────────────
+:root,
+[data-theme="light"] {
+	--color-bg-primary: #ffffff;
+	--bell-color: #211f26;
+	--bell-border: #bcbac7;
+	--fire-background: #f2eff3;
+	--fire-text-color: #000;
+}
+
+// ── Dark Theme ─────────────────────────────────────────────
+[data-theme="dark"] {
+	--color-bg-primary: #1a191b;
+	--bell-border: #67646e;
+	--bell-color: #fff;
+	--fire-background: #2a292c;
+	--fire-text-color: #fff;
+}
