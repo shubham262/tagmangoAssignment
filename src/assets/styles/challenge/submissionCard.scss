@@ -4,7 +4,7 @@
 	border-radius: 24px;
 	display: flex;
 	flex-direction: column;
-	background-color: #e6f6eb;
+	background-color: var(--post-card-bgColor);
 	padding-top: 12px;
 	gap: 12px;
 	.submissionText {
@@ -13,14 +13,14 @@
 		font-size: 14px;
 		line-height: 20px;
 		font-family: "Be Vietnam Pro", sans-serif;
-		color: #218358;
+		color: var(--post-submission-text-color);
 	}
 
 	.submissionCardContainer {
 		width: 100%;
-		background-color: #fff;
+		background-color: var(--submissionCard-backgroundColor);
 		border-radius: 24px;
-		border: 1px solid #eae7ec;
+		border: 1px solid var(--submissionCard-borderColor);
 		display: flex;
 		flex-direction: column;
 		.submissionCardHeader {
@@ -49,14 +49,14 @@
 					font-size: 16px;
 					line-height: 24px;
 					font-weight: 600;
-					color: #211f26;
+					color: var(--user-name-color);
 				}
 				.time {
 					font-family: "Be Vietnam Pro", sans-serif;
 					font-size: 12px;
 					line-height: 16px;
 					font-weight: 400;
-					color: #0400119c;
+					color: var(--time-color);
 				}
 			}
 			.threeDotsContainer {
@@ -72,7 +72,7 @@
 					width: 4px;
 					height: 4px;
 					border-radius: 100%;
-					background-color: #111;
+					background-color: var(--dot-bgcolor);
 				}
 			}
 		}
@@ -82,9 +82,9 @@
 			font-size: 14px;
 			line-height: 20px;
 			font-family: "Be Vietnam Pro", sans-serif;
+			color: var(--fire-text-color);
 		}
-		.submissionCardImage {
-		}
+
 		.submissionCardFooter {
 			display: flex;
 			justify-content: space-between;
@@ -95,10 +95,10 @@
 				align-items: center;
 				gap: 8px;
 				.groupedIconContainer {
-					width: 80px;
+					width: auto;
 					height: 32px;
 					border-radius: 999px;
-					background-color: #30004010;
+					background-color: var(--group-bgColor);
 					cursor: pointer;
 					padding: 1px 12px;
 					display: flex;
@@ -109,18 +109,24 @@
 					font-weight: 500;
 					align-items: center;
 					justify-content: center;
+					color: var(--fire-text-color);
 				}
 
 				.iconContainer {
 					width: 32px;
 					height: 32px;
 					border-radius: 100%;
-					background-color: #30004010;
+					background-color: var(--group-bgColor);
 					cursor: pointer;
-					border: 1px solid #ded9e1;
+					border: 1px solid var(--icon-border-color);
 					display: flex;
 					justify-content: center;
 					align-items: center;
+					svg {
+						path {
+							fill: var(--bell-color);
+						}
+					}
 				}
 			}
 			.submissionCardFooterRightContainer {
@@ -128,6 +134,7 @@
 				line-height: 20px;
 				font-weight: 400;
 				font-family: "Be Vietnam Pro", sans-serif;
+				color: var(--fire-text-color);
 			}
 		}
 	}

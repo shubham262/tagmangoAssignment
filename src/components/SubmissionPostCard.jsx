@@ -2,9 +2,12 @@ import React from "react";
 import "../assets/styles/challenge/submissionCard.scss";
 import Comment from "../assets/svg/challenge/comment.svg?react";
 import Smile from "../assets/svg/challenge/smiley.svg?react";
+import DarkSmile from "../assets/svg/challenge/darkSmiley.svg?react";
 import profile from "../assets/images/profile.png";
 import workout from "../assets/images/workout.png";
+import { useTheme } from "../theme/ThemeContext";
 const SubmissionPostCard = () => {
+	const { theme } = useTheme();
 	return (
 		<div className="subMissionPostCardContainer">
 			<span className="submissionText">Your Submission</span>
@@ -31,7 +34,7 @@ const SubmissionPostCard = () => {
 					<div className="submissionCardFooterLeftContainer">
 						<div className="groupedIconContainer">🙏 😍 18</div>
 						<div className="iconContainer">
-							<Smile />
+							{theme === "light" ? <Smile /> : <DarkSmile />}
 						</div>
 						<div className="iconContainer">
 							<Comment />

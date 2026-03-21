@@ -2,9 +2,8 @@ import React from "react";
 import "../../../assets/styles/challenge/subHeader.scss";
 import Info from "../../../assets/svg/challenge/info.svg?react";
 import Back from "../../../assets/svg/challenge/back.svg?react";
-import { useTheme } from "../../../theme/ThemeContext";
+
 const SubHeader = () => {
-	const { theme, toggleTheme } = useTheme();
 	return (
 		<div className="subHeaderParentContainer">
 			<div className="leftContainer">

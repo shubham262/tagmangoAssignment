@@ -7,7 +7,10 @@ import firstImage from "../assets/images/1.png";
 import secondImage from "../assets/images/2.png";
 import thirdImage from "../assets/images/3.png";
 import Pin from "../assets/svg/challenge/pin.svg?react";
+import { useTheme } from "../theme/ThemeContext";
+import DarkSmile from "../assets/svg/challenge/darkSmiley.svg?react";
 const FeedCard = ({ showPinned = false }) => {
+	const { theme } = useTheme();
 	return (
 		<div className="feedCardContainer">
 			{showPinned && (
@@ -58,7 +61,7 @@ const FeedCard = ({ showPinned = false }) => {
 				<div className="submissionCardFooterLeftContainer">
 					<div className="groupedIconContainer">🙏 😍 18</div>
 					<div className="iconContainer">
-						<Smile />
+						{theme === "light" ? <Smile /> : <DarkSmile />}
 					</div>
 					<div className="iconContainer">
 						<Comment />

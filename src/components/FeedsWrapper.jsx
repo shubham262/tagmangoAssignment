@@ -10,7 +10,8 @@ const FeedsWrapper = ({ children }) => {
 				shared
 			</span>
 			<span className="feedWrapperSubtext">
-				85+ participants already completed
+				<span className="feedWrapperHighlightSubtext">85+ </span>participants
+				already completed
 			</span>
 
 			{children}

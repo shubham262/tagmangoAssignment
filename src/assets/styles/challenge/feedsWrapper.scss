@@ -5,15 +5,15 @@
 	border-radius: 24px;
 	padding: 16px 12px 12px 12px;
 	gap: 8px;
-	border: 1px solid #eae7ec;
-	background-color: #fff;
+	border: 1px solid var(--feed-card-border);
+	background-color: var(--color-bg-primary);
 	box-sizing: border-box;
 	.feedWrapperHeading {
 		font-weight: 600;
 		font-size: 20px;
 		line-height: 28px;
 		font-family: "Be Vietnam Pro", sans-serif;
-		color: #211f26;
+		color: var(--user-name-color);
 		letter-spacing: -0.008;
 		display: flex;
 		align-items: center;
@@ -30,6 +30,10 @@
 		font-size: 14px;
 		line-height: 20px;
 		font-family: "Be Vietnam Pro", sans-serif;
-		color: #211f26;
+		color: var(--user-name-color);
+
+		.feedWrapperHighlightSubtext {
+			font-weight: 700;
+		}
 	}
 }
