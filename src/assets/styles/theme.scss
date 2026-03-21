@@ -23,7 +23,10 @@
 	--dot-bgcolor: #111;
 	--group-bgColor: #30004010;
 	--icon-border-color: #ded9e1;
-    --feed-card-border: #eae7ec;
+	--feed-card-border: #eae7ec;
+	--day-text-color: #0400119c;
+	--sidebar-overlay-bgcolor: linear-gradient(to right, #fdfcfd4d, #f7f6fccc);
+	--iHolder-bg-color: #b8adae;
 }
 
 // ── Dark Theme ─────────────────────────────────────────────
@@ -50,4 +53,7 @@
 	--group-bgColor: #2a292c;
 	--icon-border-color: #403e43;
 	--feed-card-border: #424046;
+	--day-text-color: #fff;
+	--sidebar-overlay-bgcolor: linear-gradient(to right, #1211134d #030303cc);
+	--iHolder-bg-color: #504643;
 }

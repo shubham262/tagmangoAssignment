@@ -1,13 +1,16 @@
 import React, { useCallback, useState } from "react";
 import "../../../assets/styles/challenge/sidebar.scss";
 import sidebarBackground from "../../../assets/images/sidebarbackGround.png";
-
+import darkImage from "../../../assets/images/darkSideNew.png";
 import newImage from "../../../assets/images/new.png";
 import Tick from "../../../assets/svg/challenge/tick.svg?react";
 import Lock from "../../../assets/svg/challenge/lock.svg?react";
 import Info from "../../../assets/svg/challenge/info.svg?react";
 import Back from "../../../assets/svg/challenge/back.svg?react";
+import DarkLock from "../../../assets/svg/challenge/darkLock.svg?react";
+import { useTheme } from "../../../theme/ThemeContext";
 const Sidebar = () => {
+	const { theme } = useTheme();
 	const [info, setInfo] = useState({
 		days: [1, 2, 3, 4, 5, 6, 7, 8, 9],
 		activeDay: 2,
@@ -37,14 +40,22 @@ const Sidebar = () => {
 							onClick={() => onDayClick(ele)}
 						>
 							Day - {ele}
-							{info?.activeDay === ele ? <Tick /> : <Lock />}
+							{info?.activeDay === ele ? (
+								<Tick />
+							) : theme === "light" ? (
+								<Lock />
+							) : (
+								<DarkLock />
+							)}
 						</div>
 					))}
 				</div>
 			</div>
 			<div
 				className="mobileNavigationContainer"
-				style={{ backgroundImage: `url(${newImage})` }}
+				style={{
+					backgroundImage: `url(${theme === "light" ? newImage : darkImage})`,
+				}}
 			>
 				<div className="mobileTopHeadingContainer">
 					<div className="leftContainer">
@@ -64,12 +75,16 @@ const Sidebar = () => {
 							} ${index === 0 ? "firstMobileTab" : ""}`}
 							onClick={() => onDayClick(ele)}
 						>
-							{ele === info?.activeDay ? `Day` : `Day - ${ele}`}
+							{ele === info?.activeDay ? `Day` : `Day ${ele}`}
 
 							{info?.activeDay === ele ? (
 								<span className="activeDayText">{ele}</span>
 							) : ele > info?.activeDay ? (
-								<Lock />
+								theme === "light" ? (
+									<Lock />
+								) : (
+									<DarkLock />
+								)
 							) : (
 								<Tick />
 							)}
