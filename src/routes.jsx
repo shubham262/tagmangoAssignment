@@ -6,7 +6,7 @@ const routes = [
 		path: "/",
 		component: (
 			<Challengelayout>
-				<Fitness />,
+				<Fitness />
 			</Challengelayout>
 		),
 	},
