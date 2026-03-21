@@ -5,7 +5,12 @@
 	background-size: cover;
 	position: relative;
 	padding: 16px 0px 24px 8px;
-
+	.specialtab {
+		height: 56px;
+		width: 100%;
+		background: linear-gradient(180deg, #fff, transparent);
+		position: relative;
+	}
 	.backgroundOverlay {
 		position: absolute;
 		top: 0;
@@ -32,6 +37,39 @@
 			font-family: "Be Vietnam Pro", sans-serif;
 			color: #0400119c;
 			cursor: pointer;
+			border-radius: 16px;
+		}
+		.daysTab.activeDay {
+			background-color: #f7f6fc;
+			border-top-left-radius: 24px;
+			border-bottom-left-radius: 24px;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			position: relative;
+			z-index: 1;
+		}
+		/* Top curve */
+		.daysTab.activeDay::before {
+			content: "";
+			position: absolute;
+			top: -24px;
+			right: 0;
+			width: 24px;
+			height: 24px;
+			background: #f7f6fc;
+			mask: radial-gradient(circle 24px at 0 0, transparent 100%, #f7f6fc);
+		}
+
+		/* Bottom curve */
+		.daysTab.activeDay::after {
+			content: "";
+			position: absolute;
+			bottom: -24px;
+			right: 0;
+			width: 24px;
+			height: 24px;
+			background: #f7f6fc;
+			mask: radial-gradient(circle 24px at 0 100%, transparent 100%, #f7f6fc);
 		}
 	}
 }
