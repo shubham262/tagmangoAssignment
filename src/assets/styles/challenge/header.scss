@@ -26,7 +26,6 @@
 			height: 32px;
 			border-radius: 9998px;
 			background-color: #f2eff3;
-			height: 32px;
 			display: flex;
 			align-items: center;
 			gap: 8px;
@@ -52,10 +51,87 @@
 			width: 32px;
 			height: 32px;
 			border-radius: 100%;
+
 			.profileImage {
 				width: 100%;
 				height: 100%;
 				border-radius: 100%;
+			}
+		}
+
+		// ✨ Theme Toggle Button
+		.themeToggleBtn {
+			background: none;
+			border: none;
+			cursor: pointer;
+			padding: 0;
+			display: flex;
+			align-items: center;
+
+			.toggleTrack {
+				position: relative;
+				width: 43px;
+				height: 28px;
+				border-radius: 9998px;
+				background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0 6px;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12),
+					inset 0 1px 3px rgba(0, 0, 0, 0.08);
+				transition: background 0.4s ease;
+
+				[data-theme="dark"] & {
+					background: linear-gradient(135deg, #1e1b4b, #312e81);
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4),
+						inset 0 1px 3px rgba(0, 0, 0, 0.3);
+				}
+
+				.toggleIcon {
+					font-size: 13px;
+					line-height: 1;
+					transition: opacity 0.3s ease, transform 0.3s ease;
+					z-index: 1;
+				}
+
+				.sunIcon {
+					opacity: 1;
+					transform: scale(1);
+
+					[data-theme="dark"] & {
+						opacity: 0.35;
+						transform: scale(0.8);
+					}
+				}
+
+				.moonIcon {
+					opacity: 0.35;
+					transform: scale(0.8);
+
+					[data-theme="dark"] & {
+						opacity: 1;
+						transform: scale(1);
+					}
+				}
+
+				.toggleThumb {
+					position: absolute;
+					top: 3px;
+					left: 3px;
+					width: 22px;
+					height: 22px;
+					border-radius: 50%;
+					background: white;
+					box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+					transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+					[data-theme="dark"] & {
+						transform: translateX(27px);
+						background: #a5b4fc;
+						box-shadow: 0 2px 8px rgba(99, 102, 241, 0.5);
+					}
+				}
 			}
 		}
 	}
